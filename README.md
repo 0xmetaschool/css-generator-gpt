@@ -20,7 +20,7 @@ An AI tool that takes HTML as an input to generate responsive CSS with a real-ti
 
 ## Live Demo
 
-[https://css-code-styler.vercel.app/](https://css-code-styler.vercel.app/)
+Live demo - [CSSGeneratorGPT](https://css-generator-gpt.vercel.app/)
 
 ## Features
 
