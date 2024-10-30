@@ -133,7 +133,7 @@ export default function Home() {
           <div className="flex items-center justify-center mb-6">
             <Code2 className="w-16 h-16 text-black-600 mr-4" />
             <h1 className="text-5xl font-bold text-gray-800">
-              AI Code Styler
+              CSSGeneratorGPT
             </h1>
           </div>
           <p className="text-gray-600 text-xl">
