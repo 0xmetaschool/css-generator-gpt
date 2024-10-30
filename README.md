@@ -24,14 +24,14 @@ Live demo - [CSSGeneratorGPT](https://css-generator-gpt.vercel.app/)
 
 ## Features
 
-- AI Powered CSS style generator
+- AI-Powered CSS style generator
 - Custom commands to generate according to UI preference
 
 ## Technologies Used
 
 - Tailwind CSS and Chakra UI
 - Next.js
-- AI Integration: OpenAI's GPT-4
+- AI Integration with OpenAI's GPT-4 API
 
 ## Getting Started
 
