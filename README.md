@@ -25,7 +25,7 @@ It is built with Next.js and OpenAI API. Whether you're building something new o
 - Customize styling options and receive instant visual feedback on your code.
 - Suitable for prototyping, refining applications, and exploring CSS styling techniques.
 
-### Installation Steps
+## Installation Steps
 
 1. Clone the repository:
 
