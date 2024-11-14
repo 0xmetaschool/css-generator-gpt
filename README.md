@@ -1,63 +1,51 @@
 # CSSGeneratorGPT
 
-An AI tool that takes HTML as an input to generate responsive CSS with a real-time preview for instant interaction.
+CSSGeneratorGPT is the perfect tool for developers and designers who want to bring their raw HTML to life. With just a few clicks, this AI-powered template takes your plain HTML and styles it beautifully, so you don’t have to spend hours coding CSS from scratch or hunting for design ideas.
 
-## Table of Content
+It is built with Next.js and OpenAI API. Whether you're building something new or want to make your website prettier, this template turns your basic website into something that looks amazing.
 
-- [Live Demo](#live-demo)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Getting Started](#getting-started)
-    - [Prerequisites](#prerequisites)
-    - [How to run the project](#how-to-run-the-project)
-- [Screenshots](#screenshots)
-- [How to use the application](#how-to-use-the-application)
-- [Use cases and similar project ideas](#use-cases-and-similar-project-ideas)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
-- [Contact](#contact)
 
 ## Live Demo
 
-Live demo - [CSSGeneratorGPT](https://css-generator-gpt.vercel.app/)
+[https://css-generator-gpt.vercel.app/](https://css-generator-gpt.vercel.app/)
 
 ## Features
-
-- AI Powered CSS style generator
-- Custom commands to generate according to UI preference
+- Provide raw HTML to produce CSS
+- Add custom commands to generate CSS according to UI preference
+- Live preview to view the CSS suggestions
+- Redesign the generated CSS using prompts
 
 ## Technologies Used
+- Next.js for Frontend
+-Tailwind CSS and Chakra UI for UI
+- OpenAI API Key for AI-Powered Features
 
-- Tailwind CSS and Chakra UI
-- Next.js
-- AI Integration: OpenAI's GPT-4
+## Use Cases
+- Transform raw HTML into responsive designs with AI-generated CSS.
+- Customize styling options and receive instant visual feedback on your code.
+- Suitable for prototyping, refining applications, and exploring CSS styling techniques.
 
-## Getting Started
-
-### Prerequisites
-
-- Next.js
-- OpenAI API key
-
-### How to run the project
+### Installation Steps
 
 1. Clone the repository:
 
-```bash
-git clone https://github.com/0xmetaschool/code-styler
-cd code-styler
+```
+https://github.com/0xmetaschool/css-generator-gpt.git
 ```
 
-2. Install dependencies:
+2. Navigate to the project directory:
+```
+cd css-generator-gpt
+```
 
-```bash
+3. Install dependencies:
+```
 npm install
 ```
 
 3. Set up environment variables:
 
-Create a `.env.local` file in the root directory and add the following variables:
+Create an `.env` file in the root directory and add the following variables:
 
 ```
 OPENAI_API_KEY=your_openai_api_key
@@ -65,25 +53,21 @@ OPENAI_API_KEY=your_openai_api_key
 
 4. Run the development server:
 
-```bash
+```
 npm run dev
 ```
-
-5. Open your browser and navigate to `http://localhost:3000`
-
-You should now see the CSSGeneratorGPT running with Next.js.
+Open your browser and navigate to `http://localhost:3000`.
 
 ## Screenshots
 
-![Screenshot 1](https://github.com/AkshataM17/css-code-styler/blob/main/public/Screenshot%20(113).png?raw=true)
-![Screenshot 2](https://github.com/AkshataM17/css-code-styler/blob/main/public/Screenshot%20(109).png?raw=true)
-![Screenshot 3](https://github.com/AkshataM17/css-code-styler/blob/main/public/Screenshot%20(112).png?raw=true)
+<div style="display: flex; justify-content: space-between;">
+  <img src="https://github.com/0xmetaschool/css-generator-gpt/blob/main/public/css-generator-gpt-template-add-html.png?raw=true" alt="CSSGeneratorGPT Add HTML screenshot" style="width: 49%; border: 2px solid black;" />
+  <img src="https://github.com/0xmetaschool/css-generator-gpt/blob/main/public/css-generator-gpt-template-generated-css.png?raw=true" alt="CSSGeneratorGPT Generated CSS screenshot" style="width: 49%; border: 2px solid black;" />
+</div>
+<div style="display: flex; justify-content: space-between;">
+  <img src="https://github.com/0xmetaschool/css-generator-gpt/blob/main/public/css-generator-gpt-template-preview-css.png?raw=true" style="width: 49%; border: 2px solid black;" />
+</div>
 
-
-## How to use the application
-
-1. Paste your raw HTML code in 'Input HTML field'
-2. In the field, design description, add what kind of design you prefer
 
 ## Contributing
 
@@ -98,11 +82,6 @@ We love contributions! Here's how you can help make the CSSGeneratorGPT even bet
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/0xmetaschool/code-styler/blob/main/LICENSE) file for details.
-
-## Acknowledgments
-
-- OpenAI for providing the GPT-4 API
-- The Chakra UI and Tailwind CSS team for their excellent React component library
 
 ## Contact
 
