@@ -61,11 +61,11 @@ Open your browser and navigate to `http://localhost:3000`.
 ## Screenshots
 
 <div style="display: flex; justify-content: space-between;">
-  <img src="https://github.com/0xmetaschool/css-generator-gpt/blob/main/public/css-generator-gpt-template-add-html.png?raw=true" alt="CSSGeneratorGPT Add HTML screenshot" style="width: 49%; border: 2px solid black;" />
-  <img src="https://github.com/0xmetaschool/css-generator-gpt/blob/main/public/css-generator-gpt-template-generated-css.png?raw=true" alt="CSSGeneratorGPT Generated CSS screenshot" style="width: 49%; border: 2px solid black;" />
+  <img src="https://github.com/0xmetaschool/css-generator-gpt/blob/main/public/css-generator-gpt-template-add-html.png?raw=true" alt="CSSGeneratorGPT Template Add HTML screenshot" style="width: 49%; border: 2px solid black;" />
+  <img src="https://github.com/0xmetaschool/css-generator-gpt/blob/main/public/css-generator-gpt-template-generated-css.png?raw=true" alt="CSSGeneratorGPT Template Generated CSS screenshot" style="width: 49%; border: 2px solid black;" />
 </div>
 <div style="display: flex; justify-content: space-between;">
-  <img src="https://github.com/0xmetaschool/css-generator-gpt/blob/main/public/css-generator-gpt-template-preview-css.png?raw=true" style="width: 49%; border: 2px solid black;" />
+  <img src="https://github.com/0xmetaschool/css-generator-gpt/blob/main/public/css-generator-gpt-template-preview-css.png?raw=true" alt="CSSGeneratorGPT Template Generated CSS Preview screenshot" style="width: 49%; border: 2px solid black;" />
 </div>
 
 
