@@ -28,7 +28,7 @@ const PreviewFrame = memo(({ code, previewSize, previewKey }) => {
   };
 
   return (
-    <div className="w-full overflow-hidden bg-white rounded-lg shadow-md" style={{ maxWidth: '100%' }}>
+    <div className="w-full overflow-hidden bg-black rounded-lg shadow-md" style={{ maxWidth: '100%' }}>
       <div style={{ width: getPreviewWidth(), transition: 'width 0.3s ease' }}>
         <iframe
           key={previewKey}
@@ -127,16 +127,16 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen bg-gray-50 text-gray-800 p-6 relative">
+    <main className="min-h-screen bg-black text-gray-200 p-6 relative">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12 pt-8">
           <div className="flex items-center justify-center mb-6">
-            <Code2 className="w-16 h-16 text-black-600 mr-4" />
-            <h1 className="text-5xl font-bold text-gray-800">
+            <Code2 className="w-16 h-16 text-white mr-4" />
+            <h1 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-gray-200 to-white">
               AI Code Styler
             </h1>
           </div>
-          <p className="text-gray-600 text-xl">
+          <p className="text-gray-400 text-xl">
             Transform your HTML with responsive, cross-browser compatible CSS
           </p>
         </div>
@@ -149,24 +149,24 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -50 }}
               transition={{ duration: 0.5 }}
-              className="bg-white rounded-xl shadow-lg p-8 mb-12"
+              className="bg-gradient-to-b from-gray-900 to-black rounded-xl shadow-lg p-8 mb-12 border border-gray-800"
             >
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label htmlFor="inputCode" className="block text-sm font-medium text-gray-700 mb-2">Input HTML</label>
+                  <label htmlFor="inputCode" className="block text-sm font-medium text-gray-300 mb-2">Input HTML</label>
                   <textarea
                     id="inputCode"
-                    className="w-full h-[200px] p-4 rounded-lg bg-gray-50 border border-gray-300 transition duration-200 font-mono text-sm resize-none"
+                    className="w-full h-[200px] p-4 rounded-lg bg-black border border-gray-800 text-gray-200 transition duration-200 font-mono text-sm resize-none focus:border-white focus:ring-1 focus:ring-white"
                     value={inputCode}
                     onChange={(e) => setInputCode(e.target.value)}
                     placeholder="Paste your HTML code here..."
                   />
                 </div>
                 <div>
-                  <label htmlFor="designDescription" className="block text-sm font-medium text-gray-700 mb-2">Design Description</label>
+                  <label htmlFor="designDescription" className="block text-sm font-medium text-gray-300 mb-2">Design Description</label>
                   <textarea
                     id="designDescription"
-                    className="w-full h-[100px] p-4 rounded-lg bg-gray-50 border border-gray-300 transition duration-200 text-sm resize-none"
+                    className="w-full h-[100px] p-4 rounded-lg bg-black border border-gray-800 text-gray-200 transition duration-200 text-sm resize-none focus:border-white focus:ring-1 focus:ring-white"
                     value={designDescription}
                     onChange={(e) => setDesignDescription(e.target.value)}
                     placeholder="Describe your desired design (e.g., color scheme, layout preferences, etc.)..."
@@ -175,7 +175,7 @@ export default function Home() {
                 <button
                   type="submit"
                   disabled={loading || !inputCode}
-                  className="w-full bg-black hover:bg-gray-600 text-white px-6 py-3 rounded-md transition duration-200 flex items-center justify-center space-x-3 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full bg-gradient-to-r from-gray-700 to-gray-900 hover:from-gray-600 hover:to-gray-800 text-white px-6 py-3 rounded-md transition duration-200 flex items-center justify-center space-x-3 disabled:opacity-50 disabled:cursor-not-allowed border border-gray-700"
                 >
                   {loading ? (
                     <>
@@ -190,7 +190,7 @@ export default function Home() {
                   )}
                 </button>
               </form>
-              </motion.div>
+            </motion.div>
           ) : (
             <motion.div
               key="output"
@@ -198,27 +198,27 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -50 }}
               transition={{ duration: 0.5 }}
-              className="bg-white rounded-xl shadow-lg p-8"
+              className="bg-gradient-to-b from-gray-900 to-black rounded-xl shadow-lg p-8 border border-gray-800"
             >
               <div className="mb-6">
-                <div className="flex justify-between items-center border-b border-gray-200">
+                <div className="flex justify-between items-center border-b border-gray-800">
                   <div className="flex">
                     <button
                       onClick={() => setActiveTab('css')}
-                      className={`py-2 px-4 font-medium ${activeTab === 'css' ? 'text-gray-600 border-b-2 border-gray-600' : 'text-gray-500 hover:text-gray-700'}`}
+                      className={`py-2 px-4 font-medium ${activeTab === 'css' ? 'text-white border-b-2 border-white' : 'text-gray-400 hover:text-gray-300'}`}
                     >
                       Generated CSS
                     </button>
                     <button
                       onClick={() => setActiveTab('preview')}
-                      className={`py-2 px-4 font-medium ${activeTab === 'preview' ? 'text-gray-600 border-b-2 border-gray-600' : 'text-gray-500 hover:text-gray-700'}`}
+                      className={`py-2 px-4 font-medium ${activeTab === 'preview' ? 'text-white border-b-2 border-white' : 'text-gray-400 hover:text-gray-300'}`}
                     >
                       Preview
                     </button>
                   </div>
                   <button
                     onClick={handleReset}
-                    className="text-gray-500 hover:text-gray-700 flex items-center"
+                    className="text-gray-400 hover:text-white flex items-center transition-colors duration-200"
                   >
                     <ArrowLeft className="w-4 h-4 mr-2" />
                     Start Over
@@ -229,14 +229,14 @@ export default function Home() {
               {activeTab === 'css' && (
                 <div className="space-y-6">
                   <div className="relative">
-                    <div className="max-h-[400px] overflow-y-auto rounded-lg border border-gray-200 shadow-inner">
+                    <div className="max-h-[400px] overflow-y-auto rounded-lg border border-gray-800 shadow-inner bg-black">
                       <Highlight className="css h-full">
                         {cssOnly}
                       </Highlight>
                     </div>
                     <button
                       onClick={() => navigator.clipboard.writeText(cssOnly)}
-                      className="absolute top-4 right-4 bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded-md text-sm transition duration-200 flex items-center space-x-2"
+                      className="absolute top-4 right-4 bg-gradient-to-r from-gray-700 to-gray-900 hover:from-gray-600 hover:to-gray-800 text-white px-4 py-2 rounded-md text-sm transition duration-200 flex items-center space-x-2 border border-gray-700"
                     >
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
@@ -259,7 +259,9 @@ export default function Home() {
                         key={size}
                         onClick={() => setPreviewSize(size)}
                         className={`p-2 rounded-full transition-colors duration-200 ${
-                          previewSize === size ? 'bg-blue-600 text-white' : 'bg-gray-200 text-gray-600 hover:bg-gray-300'
+                          previewSize === size 
+                            ? 'bg-gradient-to-r from-gray-100 to-white text-black' 
+                            : 'bg-black text-gray-400 hover:bg-gray-900 border border-gray-800'
                         }`}
                         title={`${size.charAt(0).toUpperCase() + size.slice(1)} view`}
                       >
@@ -284,10 +286,10 @@ export default function Home() {
             transition={{ type: 'spring', stiffness: 300, damping: 30 }}
             className="fixed bottom-6 left-0 right-0 mx-auto z-10 w-full max-w-xl"
           >
-            <div className="bg-white rounded-lg shadow-lg p-4 flex items-center space-x-4 border-black">
+            <div className="bg-gradient-to-b from-gray-900 to-black rounded-lg shadow-lg p-4 flex items-center space-x-4 border border-gray-800">
               <input
                 type="text"
-                className="flex-grow p-2 rounded-md border border-gray-300 transition duration-200"
+                className="flex-grow p-2 rounded-md border border-gray-800 bg-black text-gray-200 transition duration-200 focus:border-white focus:ring-1 focus:ring-white"
                 placeholder="Describe additional changes..."
                 value={floatingInput}
                 onChange={handleFloatingInputChange}
@@ -295,7 +297,7 @@ export default function Home() {
               <button
                 onClick={handleFloatingSubmit}
                 disabled={loading}
-                className="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded-md transition duration-200 flex items-center space-x-2 disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap"
+                className="bg-gradient-to-r from-gray-700 to-gray-900 hover:from-gray-600 hover:to-gray-800 text-white px-4 py-2 rounded-md transition duration-200 flex items-center space-x-2 disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap border border-gray-700"
               >
                 {loading ? (
                   <>
