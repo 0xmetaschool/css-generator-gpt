@@ -61,11 +61,15 @@ Open your browser and navigate to `http://localhost:3000`.
 ## Screenshots
 
 <div style="display: flex; justify-content: space-between;">
-  <img src="https://github.com/0xmetaschool/css-generator-gpt/blob/main/public/css-generator-gpt-template-add-html.png?raw=true" alt="CSSGeneratorGPT Template Add HTML screenshot" style="width: 49%; border: 2px solid black;" />
-  <img src="https://github.com/0xmetaschool/css-generator-gpt/blob/main/public/css-generator-gpt-template-generated-css.png?raw=true" alt="CSSGeneratorGPT Template Generated CSS screenshot" style="width: 49%; border: 2px solid black;" />
+  <img src="https://github.com/0xmetaschool/savage-bot/blob/main/public/Screenshot%20(128).png?raw=true" alt="Savage Bot Template Add HTML screenshot" style="width: 49%; border: 2px solid black;" />
+  <img src="https://github.com/0xmetaschool/savage-bot/blob/main/public/Screenshot%20(129).png?raw=true" alt="Savage Bot Template Generated CSS screenshot" style="width: 49%; border: 2px solid black;" />
 </div>
 <div style="display: flex; justify-content: space-between;">
-  <img src="https://github.com/0xmetaschool/css-generator-gpt/blob/main/public/css-generator-gpt-template-preview-css.png?raw=true" alt="CSSGeneratorGPT Template Generated CSS Preview screenshot" style="width: 49%; border: 2px solid black;" />
+  <img src="https://github.com/0xmetaschool/savage-bot/blob/main/public/Screenshot%20(130).png?raw=true" alt="Savage Bot Template Add HTML screenshot" style="width: 49%; border: 2px solid black;" />
+  <img src="https://github.com/0xmetaschool/savage-bot/blob/main/public/Screenshot%20(131).png?raw=true" alt="Savage Bot Template Generated CSS screenshot" style="width: 49%; border: 2px solid black;" />
+</div>
+<div style="display: flex; justify-content: space-between;">
+  <img src="https://github.com/0xmetaschool/savage-bot/blob/main/public/Screenshot%20(132).png?raw=true" alt="Savage Bot Template Generated CSS Preview screenshot" style="width: 49%; border: 2px solid black;" />
 </div>
 
 
